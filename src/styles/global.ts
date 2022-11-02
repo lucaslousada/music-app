@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *:focus{
-    /* outline: 0; */
-    /* box-shadow: 0 0 0 2px #5865f2; */
+    outline: 0;
+    box-shadow: 0 0 0 2px #307DB8;
   }
 
   html {
@@ -22,17 +22,24 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* background: ${({ theme }) => theme.colors.color_400}; */
+    background-image: linear-gradient(180deg, rgba(29, 33, 35, 0.8) 0%, #1D2123 61.48%), url('/src/assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, textarea, button, a {
     font-family: 'Quicksand', sans-serif;
-    /* color: ${({ theme }) => theme.colors.color_900}; */
+    color: ${({ theme }) => theme.colors.light};
   }
 
   a {
     text-decoration: none;
+  }
+
+  ul, ol {
+    list-style: none;
   }
 
   button {
