@@ -8,8 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *:focus{
-    outline: 0;
-    box-shadow: 0 0 0 2px #307DB8;
+    outline: 2px solid #307DB8;
   }
 
   html {
@@ -44,5 +43,7 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
 `;
