@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     background-image: linear-gradient(180deg, rgba(29, 33, 35, 0.8) 0%, #1D2123 61.48%), url('/src/assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
 

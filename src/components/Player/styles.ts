@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as Slider from '@radix-ui/react-slider';
 
 export const Container = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0;
 
   display: grid;

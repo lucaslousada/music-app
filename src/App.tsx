@@ -1,5 +1,6 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import { Search } from './pages/Search';
 import { Layout } from './components/Layout';
 import { Menu } from './components/Menu';
 import { Player } from './components/Player';
@@ -14,9 +15,8 @@ export function App() {
         <Menu />
 
         <Routes>
-          <Route path="/" element={<Navigate replace to="/reproduction" />} />
-          <Route path="/reproduction" element={<div>Play</div>} />
-          <Route path="/search" element={<div>Search</div>} />
+          <Route path="/" element={<div>Play</div>} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </Layout>
       <Player />

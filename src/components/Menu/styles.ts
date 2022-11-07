@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: max-content;
   gap: 40px 0;
+  padding: 20px 0 0 0;
 
   > svg {
     width: 34px;
