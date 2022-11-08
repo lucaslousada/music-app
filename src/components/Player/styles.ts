@@ -120,19 +120,29 @@ export const SliderRange = styled(Slider.Range)`
 `;
 
 export const SliderThumb = styled(Slider.Thumb)`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px;
-  border-radius: 50%;
 
   &:focus {
-    border: 2px solid #fff;
     outline: 0;
 
-    &::after {
+    &::after,
+    &::before {
       visibility: visible;
     }
+  }
+
+  &::before {
+    content: '';
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
   }
 
   &::after {
