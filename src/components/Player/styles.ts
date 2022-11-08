@@ -9,7 +9,7 @@ export const Container = styled.div`
   grid-template-areas:
     'musicInformation controls volumeSlider'
     'musicInformation timeSlider volumeSlider';
-  grid-template-columns: max-content auto 183px;
+  grid-template-columns: 183px auto 183px;
   align-items: center;
   gap: 31px 30px;
 
@@ -25,6 +25,7 @@ export const MusicInformation = styled.div`
   grid-area: musicInformation;
   display: grid;
   grid-template-areas: 'img music' 'img artist';
+  grid-template-columns: max-content auto;
   grid-template-rows: 26px auto;
   align-items: flex-start;
   gap: 0 13px;

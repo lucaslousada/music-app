@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import { Home } from './pages/Home';
 import { Search } from './pages/Search';
 import { Layout } from './components/Layout';
 import { Menu } from './components/Menu';
@@ -15,7 +16,7 @@ export function App() {
         <Menu />
 
         <Routes>
-          <Route path="/" element={<div>Play</div>} />
+          <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
         </Routes>
       </Layout>
