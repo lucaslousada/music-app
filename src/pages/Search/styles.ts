@@ -9,6 +9,7 @@ export const Container = styled.main`
 
   h1 {
     font-size: 24px;
+    color: ${({ theme }) => theme.colors.light};
   }
 `;
 

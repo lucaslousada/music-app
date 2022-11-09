@@ -10,6 +10,7 @@ export const Container = styled.main`
   width: 100%;
   min-height: calc(100vh - 115px);
   margin-left: -78px;
+  color: ${({ theme }) => theme.colors.light};
 
   img {
     width: 285px;

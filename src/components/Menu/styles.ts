@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rgba } from 'polished';
 
 export const Container = styled.div`
   position: sticky;
@@ -35,9 +36,11 @@ export const Container = styled.div`
     svg {
       width: 22px;
       height: 22px;
+      color: ${({ theme }) => rgba(theme.colors.light, 0.45)};
+      transition: color 0.2s;
 
       &:hover {
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.light};
       }
     }
   }

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import * as Slider from '@radix-ui/react-slider';
+import { rgba } from 'polished';
 
 export const Container = styled.div`
   position: fixed;
@@ -16,7 +17,7 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 96px;
 
-  background: rgba(29, 33, 35, 0.3);
+  background: ${({ theme }) => rgba(theme.colors.dark, 0.3)};
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
 `;
@@ -75,6 +76,7 @@ export const Controls = styled.div`
   svg {
     width: 16px;
     height: 16px;
+    color: ${({ theme }) => theme.colors.light};
   }
 
   button:nth-child(3) {
@@ -88,7 +90,6 @@ export const Controls = styled.div`
     svg {
       width: 9px;
       height: 9px;
-      color: #efeee0;
     }
   }
 `;
@@ -185,6 +186,7 @@ export const VolumeSlider = styled.div`
     svg {
       width: 18px;
       height: 18px;
+      color: ${({ theme }) => theme.colors.light};
     }
   }
 `;
