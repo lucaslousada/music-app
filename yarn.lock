@@ -563,6 +563,11 @@
     "@svgr/hast-util-to-babel-ast" "^6.5.1"
     svg-parser "^2.0.4"
 
+"@types/deezer-sdk@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@types/deezer-sdk/-/deezer-sdk-0.0.2.tgz#6824897dc9e5ef80605a0f37910882c124e9a815"
+  integrity sha512-le8mfBjfHBDtl5nkSPZe9UC9MwG266OnQ6pmAlMjgZ4ws1WKwp07Hqc+CfZ4guM/pR8suaMpSKOxMZ3aqaHCoA==
+
 "@types/estree@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.0.tgz#5fb2e536c1ae9bf35366eed879e827fa59ca41c2"

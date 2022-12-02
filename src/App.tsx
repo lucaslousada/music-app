@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import { DeezerApiAuthentication } from './pages/DeezerApiAuthentication';
 import { Home } from './pages/Home';
 import { Search } from './pages/Search';
 import { Layout } from './components/Layout';
@@ -10,13 +12,21 @@ import { GlobalStyle } from './styles/global';
 import { defaultTheme } from './styles/themes/defaultTheme';
 
 export function App() {
+  useEffect(() => {
+    DZ.init({
+      appId: '568302',
+      channelUrl: 'http://localhost:5173/play',
+    });
+  }, []);
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Layout>
         <Menu />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<DeezerApiAuthentication />} />
+          <Route path="/play" element={<Home />} />
           <Route path="/search" element={<Search />} />
         </Routes>
       </Layout>

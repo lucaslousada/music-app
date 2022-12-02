@@ -10,7 +10,7 @@ export function Menu() {
     <Container>
       <LogoImg />
       <nav>
-        <NavLink to="/">
+        <NavLink to="/play">
           <Play weight="fill" />
         </NavLink>
         <NavLink to="/search">

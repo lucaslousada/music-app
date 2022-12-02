@@ -3,6 +3,9 @@ import { Container } from './styles';
 export function Home() {
   return (
     <Container>
+      <button type="button" onClick={() => DZ.logout()}>
+        Deslogar
+      </button>
       <img
         src="https://images.unsplash.com/photo-1570936100858-56eb3a5f5ae1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
         alt="Capa da música"
